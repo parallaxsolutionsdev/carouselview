@@ -312,6 +312,7 @@ public class CarouselView extends FrameLayout {
                 ImageView imageView = new ImageView(mContext);
                 imageView.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));  //setting image position
                 imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+                imageView.setAdjustViewBounds(true);
 
                 objectToReturn = imageView;
                 mImageListener.setImageForPosition(position, imageView);
